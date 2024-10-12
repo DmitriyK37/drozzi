@@ -1,0 +1,236 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1006;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-content {
+    position: relative;
+    padding-right: 56px;
+
+    @media (max-width: 768px) {
+      padding-right: 0px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 0px;
+      right: -1px;
+      cursor: pointer;
+      width: 48px;
+      height: 48px;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      background-image: url(../services/img/cancel.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (max-width: 768px) {
+        border-radius: 16px;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    form {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 32px;
+      padding-right: 32px;
+      background-color: #22252B;
+      border-radius: 16px;
+      gap: 24px;
+
+      @media (max-width: 768px) {
+        width: 375px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      h3 {
+        font-size: 20px;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 24px;
+        color: #ffffff;
+
+        @media (max-width: 768px) {
+          font-size: 18px;
+          padding-left: 24px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 15px;
+        color: #ffffff;
+        text-align: center;
+
+        @media (max-width: 768px) {
+          padding-left: 24px;
+        }
+      }
+
+      label {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: -18px;
+        color: #ffffff;
+
+        @media (max-width: 768px) {
+          padding-left: 24px;
+        }
+      }
+
+      input {
+        width: 390px;
+        height: 46px;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 5px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #707A8F;
+        background-color: #2D3139;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        @media (max-width: 768px) {
+          width: 327px;
+          margin-left: 24px;
+        }
+
+        &:hover {
+          background-color: #4F5664;
+        }
+
+        &:focus {
+          background-color: #7E889A;
+          color:#ffffff;
+        }
+      } 
+
+      input[type="checkbox"] {
+        display: none;
+      }
+      
+      .remember-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      
+      .remember-label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      .custom-checkbox {
+        width: 24px;
+        height: 24px;
+        background-image: url(../services/img/checkbox.svg);
+        position: relative;
+        margin-right: 10px;
+      }
+
+      input[type="checkbox"]:checked + .custom-checkbox {
+        background-image: url(../services/img/checkbox-check.svg);
+      }
+
+      .modal-content-btn {
+        background-color: #4452FE;
+        color: white;
+        padding: 15px 26px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #6975FE;
+        }
+
+        @media (max-width: 768px) {
+          width: 327px;
+          padding: 16px 26px;
+          margin-left: 24px;
+        }
+      }
+
+      .enter-social {
+        display: flex;
+
+        @media (max-width: 768px) {
+          margin-left: 24px;
+        }
+
+        :first-child {
+          &::before {
+            content: '';
+            display: flex;
+            position: relative;
+            width: 24px;
+            height: 24px;
+            background-image: url(../services/img/google.svg);
+            background-repeat: no-repeat;
+          }
+        }
+        :last-child {
+          margin-right: 0px;
+          &::before {
+            content: '';
+            display: flex;
+            position: relative;
+            width: 24px;
+            height: 24px;
+            background-image: url(../services/img/apple.svg);
+            background-repeat: no-repeat;
+          }
+        }
+
+        a {
+          display: flex;
+          position: relative;
+          width: 192px;
+          justify-content: center;
+          margin-right: 13px;
+          padding: 13px 0px;
+          font-size: 16px;
+          color:#ffffff;
+          background-color: transparent;
+          border: 1px solid #ffffff;
+          border-radius: 8px;
+
+          &:hover {
+            background-color: #4F5664;
+          }
+
+          @media (max-width: 768px) {
+            width: 157px;
+            padding: 11px 0px;
+          }
+        }
+      }
+
+      .registration {
+        color: #4452FE;
+      }
+    }
+  }
+}

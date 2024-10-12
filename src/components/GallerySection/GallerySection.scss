@@ -1,0 +1,132 @@
+@import '../style/variables.scss';
+
+
+.gallery-section {
+  padding-top: 128px;
+  padding-bottom: 68px;
+  background: #16181D;
+  color: $white;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding-top: 98px;
+  }
+
+  .container {
+    h2 {
+      font-size: 56px;
+
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+  
+    p {
+      width: 425px;
+      font-size: 20px;
+      margin: auto;
+      margin-top: 36px;
+      margin-bottom: 40px;
+
+      @media (max-width: 768px) {
+        width: 343px;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .gallery-photos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .photo-item {
+          padding: 10px;
+
+          @media (max-width: 768px) {
+            width: 168px;
+            padding: 5px;
+          }
+        }
+      }
+
+      .load-more-btn {
+        padding: 13px 24px;
+        margin: 30px auto;
+        font-size: 16px;
+        background-color: #16181D;
+        color: #fff;
+        border: 1px solid $white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+          background-color: #555;
+        }
+      }
+
+      .gallery-modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 1001;
+        left: 0;
+        top: 0;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-size:contain;
+        cursor: pointer;
+      }
+
+      .gallery-modal-content {
+        position: relative;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        cursor: default;
+
+        .full-photo {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          padding: 20px;
+          object-fit: contain;
+        }
+
+        .close {
+          position: relative;
+          z-index: 1002;
+          top: 1px;
+          right: -49px;
+          cursor: pointer;
+          width: 48px;
+          height: 48px;
+          color: #ffffff;
+          border: 1px solid #ffffff;
+          border-radius: 8px;
+          background-image: url(../services/img/cancel.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+    
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

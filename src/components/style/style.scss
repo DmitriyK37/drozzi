@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: "Onest";
+  src: url(../fonts/Onest-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  font-family: "Onest";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+dl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Onest";
+}
+
+a {
+  font-family: "Onest";
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: "Onest";
+  margin: 0;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}

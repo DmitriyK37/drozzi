@@ -1,0 +1,233 @@
+@import '../style/variables.scss';
+
+.footer {
+  background-color: #16181D;
+  color: $white;
+  padding-top: 98px;
+
+  @media (max-width: 768px) {
+    padding-top: 0px;
+  }
+
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 80px 20px 80px;
+
+    @media (max-width: 1024px) {
+      margin: 0 0 20px 0;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      align-items: start;
+      text-align: start;
+    }
+
+    .footer-column {
+      padding: 0 20px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+        padding: 0 0 0 16px;
+      }
+
+      details[open] {
+        summary::after {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-image: url(../services/img/chevron-up.svg);
+          right: 0px;
+          top: 0px;
+        }
+      }
+
+      summary {
+        position: relative;
+        color: $white;
+        margin-bottom: 30px;
+        font-size: 20px;
+        list-style: none;
+
+        &::-webkit-details-marker{display:none;}
+        &::-moz-list-bullet{list-style-type:none;}
+        &::marker{display:none;}
+
+        &::after {
+          display: none;
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-image: url(../services/img/chevron-down.svg);
+          right: 0px;
+          top: 0px;
+        }
+
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+          width: 333px;
+        }
+
+        @media (max-width: 500px) {
+          &::after {
+            display: flex;
+          }
+        }
+      }
+
+      .column-name {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        gap: 16px;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            font-size: 16px;
+            color: #E2E4E9;
+            text-decoration: none;
+            border: 1px solid transparent;
+
+            &:hover {
+              border-bottom: 1px solid #E2E4E9;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-contact {
+    width: 336px;
+    text-align: start;
+    margin-left: 60px;
+
+    @media (max-width: 1024px) {
+      margin: 0;
+    }
+
+    @media (max-width: 800px) {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      text-align: start;
+      margin-left: 16px;
+    }
+
+    a {
+      color: #E2E4E9;
+      text-decoration: none;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 16px;
+      border: 1px solid transparent;
+
+      u {
+        text-decoration: none;
+        color: #E2E4E9;
+        border: 1px solid transparent;
+
+        &:hover {
+          border-bottom: 1px solid #E2E4E9;
+        }
+      }
+    }
+
+    .footer-social {
+      display: flex;
+
+      @media (max-width: 768px) {
+        position: relative;
+        margin-top: 40px;
+        margin-left: 150px;
+      }
+
+      a {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+
+        &:hover path {
+          fill: #4452FE;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 768px) {
+      align-items: start;
+      padding: 30px 0 20px 16px;
+    }
+
+    img {
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        width: 102px;
+        height: 32px;
+        position: absolute;
+        top: -75px;
+        left: 26px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #707A8F;
+      border: 1px solid transparent;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+
+      &:hover {
+        border-bottom: 1px solid #707A8F;
+      }
+    }
+
+    button {
+      font-size: 16px;
+      background-color: #16181D;
+      color: white;
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      padding: 13px 40px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      @media (max-width: 768px) {
+        width: 334px;
+      }
+  
+      &:hover {
+        background-color: #333333;
+      }
+    }
+  }
+}

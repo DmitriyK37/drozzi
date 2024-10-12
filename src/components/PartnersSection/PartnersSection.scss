@@ -1,0 +1,61 @@
+@import '../style/variables.scss';
+
+.partners-section {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background: #16181D;
+  color: $white;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-container {
+    h2 {
+      font-size: 56px;
+
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+  
+    p {
+      width: 425px;
+      font-size: 20px;
+      margin: auto;
+      margin-top: 36px;
+      margin-bottom: 64px;
+
+      @media (max-width: 768px) {
+        width: 343px;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .partners-icon {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+
+    @media (max-width: 768px) {
+      width: 300px;
+      gap: 32px;
+      justify-content: start;
+    }
+
+    a {
+      @media (max-width: 768px) {
+        width: 45px;
+      }
+    }
+
+  }
+}
