@@ -7,7 +7,7 @@
   justify-content: center;
   padding-top: 98px;
   padding-bottom: 98px;
-  background-color: #16181D;
+  background-color: $background-main;
 
   @media (max-width: 950px) {
     height: auto;
@@ -201,7 +201,7 @@
   }
 
   .form-content {
-    background-color: #16181D;
+    background-color: $background-main;
     color: $white;
     font-size: 30px;
     padding: 100px;

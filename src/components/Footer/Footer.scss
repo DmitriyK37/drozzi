@@ -1,7 +1,7 @@
 @import '../style/variables.scss';
 
 .footer {
-  background-color: #16181D;
+  background-color: $background-main;
   color: $white;
   padding-top: 98px;
 
@@ -213,7 +213,7 @@
 
     button {
       font-size: 16px;
-      background-color: #16181D;
+      background-color: $background-main;
       color: white;
       border: 1px solid #ffffff;
       border-radius: 8px;

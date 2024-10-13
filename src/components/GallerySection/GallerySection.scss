@@ -4,7 +4,7 @@
 .gallery-section {
   padding-top: 128px;
   padding-bottom: 68px;
-  background: #16181D;
+  background: $background-main;
   color: $white;
   text-align: center;
 
@@ -61,7 +61,7 @@
         padding: 13px 24px;
         margin: 30px auto;
         font-size: 16px;
-        background-color: #16181D;
+        background-color: $background-main;
         color: #fff;
         border: 1px solid $white;
         border-radius: 8px;

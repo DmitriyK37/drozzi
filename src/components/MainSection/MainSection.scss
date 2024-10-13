@@ -1,9 +1,11 @@
+@import '../style/variables.scss';
+
 .main-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #16181D;
+  background-color: $background-main;
   color: #ffffff;
 
   .container {
@@ -69,7 +71,7 @@
 
     :last-child {
       width: 209px;
-      background-color: #16181D;
+      background-color: $background-main;
       padding: 19px 0 19px 0;
 
       @media (max-width: 768px) {

@@ -27,7 +27,7 @@ const ProductSection = () => {
           <div className='details'>
             <h3 className='details-header'>Дизайн с реальными данными</h3>
             <p className='details-description'>Вы когда-нибудь задумывались о том, не слишком ли вы зависите от клиента в работе? Link поможет вам определиться</p>
-            <button className='details-btn2' onClick={() => window.scrollTo({ top: document.getElementById('product').offsetTop, behavior: 'smooth' })}>
+            <button className='details-btn2' onClick={() => window.scrollTo({ top: document.getElementById('contact-form').offsetTop, behavior: 'smooth' })}>
               Попробовать бесплатно
             </button>
             <img src={BoardsNotifications} alt="BoardsNotifications"/>

@@ -1,6 +1,8 @@
+@import '../style/variables.scss';
+
 .header {
   width: 100%;
-  background-color: #16181D;
+  background-color: $background-main;
   top: 0;
   left: 0;
 
@@ -31,7 +33,7 @@
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    background-color: #16181D;
+    background-color: $background-main;
     z-index: 1000;
 
     @media (max-width: 1010px) {
@@ -139,7 +141,7 @@
 
   .header-btn {
     font-size: 16px;
-    background-color: #16181D;
+    background-color: $background-main;
     color: white;
     border: 1px solid #ffffff;
     border-radius: 8px;
